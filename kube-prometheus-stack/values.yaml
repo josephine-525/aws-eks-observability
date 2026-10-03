@@ -1,0 +1,11 @@
+grafana:
+  admin:
+    existingSecret: grafana-admin-credentials   # created out-of-band (kubectl), never committed here — same pattern as CI's expenseapp-repo-creds Secret
+    userKey: admin-user
+    passwordKey: admin-password
+  service:
+    type: ClusterIP
+
+prometheus:
+  service:
+    type: ClusterIP
